@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'gnome-item',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GnomeItemComponent implements OnInit {
 
+  @Input() gnomeItem;
+
   constructor() { }
 
   ngOnInit() {
+    console.log(this.gnomeItem);
   }
 
 }

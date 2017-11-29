@@ -1,3 +1,4 @@
+import { GnomeService } from './../../../services/gnome.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GnomeWrapperComponent implements OnInit {
 
-  constructor() { }
+  gnomeInfo: any;
+
+  constructor(private gnomeService: GnomeService) { }
 
   ngOnInit() {
+     this.gnomeService.getGnomeInfo().subscribe((res)=>{
+      this.gnomeInfo= res.Brastlewark;
+      console.log("res-->");
+      console.log(res.Brastlewark);
+    });
   }
-
 }

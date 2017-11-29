@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'gnome-list',
@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GnomeListComponent implements OnInit {
 
+  @Input() gnomeInfo;
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
