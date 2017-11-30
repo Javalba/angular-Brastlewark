@@ -6,6 +6,7 @@ An exercise to retrieve data from an external json using:
 * [Fontawesome](http://fontawesome.io/) - Fontawesome 
 * [Bootstrap 4](https://v4-alpha.getbootstrap.com/) - Bootstrap 4
 
+
 ### Prerequisites
 
 Angular 4
@@ -27,12 +28,6 @@ ng serve
 
 Try this there --> http://localhost:4200/
 
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Authors
 
