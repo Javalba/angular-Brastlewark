@@ -2,10 +2,11 @@
 
 
 An exercise to retrieve data from an external json using:
-* [Angular 4](https://angular.io/) - Angular 4 
-* [Fontawesome](http://fontawesome.io/) - Fontawesome 
-* [Bootstrap 4](https://v4-alpha.getbootstrap.com/) - Bootstrap 4
+* [Angular 4](https://angular.io/) - Angular is a platform that makes it easy to build applications with the web
+* [Fontawesome](http://fontawesome.io/) - The iconic font and CSS toolkit 
+* [Bootstrap 4](https://v4-alpha.getbootstrap.com/) - Bootstrap is the most popular HTML, CSS, and JS framework in the world for building responsive
 
+![alt text](https://github.com/Javalba/angular-Brastlewark/blob/master/Brastlewark.png "Brastlewark")
 
 ### Prerequisites
 
@@ -20,14 +21,18 @@ You can install the CLI easily with NPM:
 npm install -g @angular/cli
 ```
 
-And then
+And then install node modules 
+
+```
+npm install
+```
+
+And then launch web application
 
 ```
 ng serve
 ```
-
 Try this there --> http://localhost:4200/
-
 
 ## Authors
 
