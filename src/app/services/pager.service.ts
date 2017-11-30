@@ -3,20 +3,20 @@ import * as _ from 'underscore';
 
 @Injectable()
 export class PagerService {
-  getPager(totalItems: number, currentPage: number = 1, pageSize: number = 10) {
+  getPager(totalItems: number, currentPage: number = 1, pageSize: number = 8) {
       // calculate total pages
       let totalPages = Math.ceil(totalItems / pageSize);
 
       let startPage: number, endPage: number;
-      if (totalPages <= 10) {
-          // less than 10 total pages so show all
+      if (totalPages <= 8) {
+          // less than 8 total pages so show all
           startPage = 1;
           endPage = totalPages;
       } else {
-          // more than 10 total pages so calculate start and end pages
+          // more than 8 total pages so calculate start and end pages
           if (currentPage <= 6) {
               startPage = 1;
-              endPage = 10;
+              endPage = 8;
           } else if (currentPage + 4 >= totalPages) {
               startPage = totalPages - 9;
               endPage = totalPages;
