@@ -1,42 +1,28 @@
-<div class="card teaser-wrapper-gnome">
 
-  <div>
+  <div class="card">
     <img class="card-img-top resize-img" src="{{gnomeItem.thumbnail}}" alt="Card image cap">
-    <span>Age: </span>
-    <span>{{gnomeItem.age}}</span>
-    <br>
-    <span>Friends:</span>
-    <span class="label label-default" *ngFor="let friend of gnomeItem.friends">{{friend}}</span>
-    <br>
-    <span>Hair Color: </span>
-    <span>{{gnomeItem.hair_color}}</span>
-    <br>
-    <span>Height: </span>
-    <span>{{gnomeItem.height}}</span>
-    <br>
-    <span>Name: </span>
-    <span>{{gnomeItem.name}}</span>
-    <br>
-    <span>Professions: </span>
-    <span class="label label-default" *ngFor="let profession of gnomeItem.professions">{{profession}}</span>
-    <br>
+    <div class="card-block">
+      <h4 class="card-title">{{gnomeItem.name}}</h4>
+      <span>Age: </span>
+      <span>{{gnomeItem.age}}</span>
+      <br>
+      <span>Friends:</span>
+      <span class="badge badge-info badge-margin" *ngFor="let friend of gnomeItem.friends">{{friend}} </span>
+      <br>
+<!--       <span>Hair Color: </span>
+      <span>{{gnomeItem.hair_color}}</span>
+      <br>
+      <span>Height: </span>
+      <span>{{gnomeItem.height}}</span>
+      <br> -->
 
-
-<!--     <img class="card-img-top resize-img" src="{{gnomeItem.designMainImg}}">
- -->
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+          <span class="badge badge-default badge-margin" *ngFor="let profession of gnomeItem.professions">{{profession}}   </span>
+          <br>
+      </small>
+    </div>
   </div>
 
-  <!--     <a [routerLink]="['/gnomeItem.name', gnomeItem.id]" role="button">
-      <img class="card-img-top resize-img" [ngClass]="hover" src="{{gnomeItem.designMainImg}}" alt="Card image cap">
-
-    <div class="card-block">
-      <p class="card-text" (mouseenter) ="changeImgHover2($event)" (mouseout)="changeImgHover2($event)">{{gnomeItem.description}}</p>
-    </div>
-    <div>
-        <div class="card-footer text-muted">
-            <span>{{gnomeItem.title}}</span>
-        </div>
-    </div> -->
-
-</div>
-
+  <!--      <a [routerLink]="['/gnomeItem.name', gnomeItem.id]" role="button"> -->

@@ -12,7 +12,7 @@ export class GnomeItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.gnomeItem);
+  /*   console.log(this.gnomeItem); */
   }
 
 }

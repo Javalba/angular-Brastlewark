@@ -15,8 +15,8 @@ export class GnomeWrapperComponent implements OnInit {
   ngOnInit() {
      this.gnomeService.getGnomeInfo().subscribe((res)=>{
       this.gnomeInfo= res.Brastlewark;
-      console.log("res-->");
-      console.log(res.Brastlewark);
+/*       console.log("res-->");
+      console.log(res.Brastlewark); */
     });
   }
 }
