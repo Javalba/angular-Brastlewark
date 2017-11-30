@@ -1,3 +1,4 @@
+import { PagerService } from './services/pager.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -32,7 +33,7 @@ import { KeysPipe } from './pipes/keys.pipe';
     HttpModule,
     AppRoutingModule,
   ],
-  providers: [GnomeService],
+  providers: [GnomeService,PagerService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

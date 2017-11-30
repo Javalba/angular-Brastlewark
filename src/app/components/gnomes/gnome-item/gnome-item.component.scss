@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Sacramento');
+$font: 'Indie Flower', cursive;
+$font-name: 'Dancing Script', cursive;
 p{
   color: black;
 }
@@ -21,4 +24,14 @@ p{
   margin-top: 3px;
   float: none;
   margin-bottom: 10px;
+}
+
+.font-birthday{
+  font-family: $font;
+  font-size: 21px;
+}
+
+.font-title{
+  font-family: $font-name;
+  font-size: xx-large;
 }
